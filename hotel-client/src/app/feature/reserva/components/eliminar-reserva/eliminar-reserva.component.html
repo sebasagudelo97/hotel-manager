@@ -1,0 +1,46 @@
+<form #form="ngForm">
+<div class="card border-primary mb-3">
+    <div class="card-header">Reservas</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Listado de Reservas</h5>
+      <div class="my-2 text-left">
+        <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/crear-reserva']">
+          Crear Reserva
+        </button>
+      </div>
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>idReserva</th>
+            <th>Numero Cedula</th>
+            <th>Numero Habitacion</th>
+            <th>Cantidad Personas</th>
+            <th>Fecha Ingreso</th>
+            <th>Fecha Salida</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let reserva of reserva">
+            <td>{{ reserva.idReserva }}</td>
+            <td>{{ reserva.numeroCedula }}</td>
+            <td>{{ reserva.numeroHabitacion }}</td>
+            <td>{{ reserva.cantidadPersonas }}</td>
+            <td>{{ reserva.fechaIngreso }}</td>
+            <td>{{ reserva.fechaSalida }}</td>
+            <td>
+                <button type="button" name="actualizar" class="btn btn-primary btn-sm">Actualizar</button>
+            </td>
+            <td>
+                <button type="button" name="actualizar" class="btn btn-danger btn-sm" (click)='eliminar(reserva)'>Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-danger"  [routerLink]="['/principal']">Volver</button>   
+      </div>  
+    </div>
+  </div>
+</form>

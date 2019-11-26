@@ -1,0 +1,46 @@
+<div class="jumbotron">
+  <h1 class="display-6">CREAR USUARIO</h1>
+  <form #form="ngForm">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCedula">Cedula ciudadania</label>
+        <input type="number" class="form-control" id="inputCedula" placeholder="Cedula ciudadania"
+          [(ngModel)]="usuario.cedulaCiudadania" name="cedulaCiudadania">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputNumeroCelular" >Numero Celular</label>
+        <input type="number" class="form-control" id="inputNumeroCelular" placeholder="Numero Celular"
+          [(ngModel)]="usuario.numeroCelular" name="numeroCelular">
+      </div>
+  
+      <div class="form-group col-md-6">
+        <label for="inputPrimerNombre">Primer Nombre</label>
+        <input type="text" class="form-control" id="inputPrimerNombre" placeholder="Primer Nombre"
+          [(ngModel)]="usuario.primerNombre" name="primerNombre">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputSegundoNombre">Segundo Nombre</label>
+        <input type="text" class="form-control" id="inputSegundoNombre" placeholder="Segundo Nombre"
+          [(ngModel)]="usuario.segundoNombre" name="segundoNombre">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputPrimerApellido">Primer Apellido</label>
+        <input type="text" class="form-control" id="inputPrimerApellido" placeholder="Primer Apellido"
+          [(ngModel)]="usuario.primerApellido" name="primerApellido">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputSegundoApellido">Segundo Apellido</label>
+        <input type="text" class="form-control" id="inputSegundoApellido" placeholder="Segundo Apellido"
+          [(ngModel)]="usuario.segundoApellido" name="segundoApellido">
+      </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="submit" class="btn btn-primary" (click)="OnSubmit(form)" >Crear</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-danger"  [routerLink]="['/principal']">Volver</button>   
+    </div>   
+  </form>
+</div>
