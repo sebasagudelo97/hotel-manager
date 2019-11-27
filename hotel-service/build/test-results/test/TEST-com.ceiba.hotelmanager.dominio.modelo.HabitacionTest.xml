@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ceiba.hotelmanager.dominio.modelo.HabitacionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T18:47:13" hostname="SEBASTIAN-AGUDELO" time="0.001">
+  <properties/>
+  <testcase name="funcionamientoGetterAndSetterHabitacion()" classname="com.ceiba.hotelmanager.dominio.modelo.HabitacionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

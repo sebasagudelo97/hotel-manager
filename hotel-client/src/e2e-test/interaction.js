@@ -23,6 +23,8 @@ describe( 'HotelManager interaction', function(){
         browser.get('http://localhost:4200/');
 
         expect(browser.getTitle()).toEqual('HotelManagerApp');
+
+        browser.sleep(3000);
     });
 
     it ('Enlace, crear usuario', function(){
@@ -41,6 +43,7 @@ describe( 'HotelManager interaction', function(){
         element(by.id('inputPrimerApellido')).sendKeys(usuario.primerApellido);
         element(by.id('inputSegundoApellido')).sendKeys(usuario.segundoApellido);
         element(by.id('inputNumeroCelular')).sendKeys(usuario.numeroCeular);
+        browser.sleep(1000);
         element(by.id('btnCrearUsuario')).click();
         element(by.buttonText('OK')).click();
 
@@ -48,18 +51,19 @@ describe( 'HotelManager interaction', function(){
 
     it('Volver del form de crear usuario a la pag principal' , function(){
         browser.get( 'http://localhost:4200/crear-usuario');
-
-
+        browser.sleep(1000);
         element(by.id('btnVolverPrincipal')).click();
-
+        browser.sleep(1000);
         expect(browser.getCurrentUrl()).toBe('http://localhost:4200/principal');
+        browser.sleep(1000);
 
     });
 
     it ('Enlace, crear reserva', function(){
         browser.get( 'http://localhost:4200/');
+        browser.sleep(1000);
         element(by.id('crear-reserva')).click();
-
+        browser.sleep(1000);
         expect(browser.getCurrentUrl()).toBe('http://localhost:4200/crear-reserva');
         browser.sleep(1000);
 
@@ -72,25 +76,27 @@ describe( 'HotelManager interaction', function(){
         element(by.id('inputCantidadPersonas')).sendKeys(reserva.cantidadPersonas);
         element(by.id('inputFechaIngreso')).sendKeys(reserva.fechaIngreso);
         element(by.id('inputFechaSalida')).sendKeys(reserva.fechaSalida);
+        browser.sleep(1000);
         element(by.id('btnCrearReserva')).click();
         element(by.buttonText('OK')).click();
     });
 
     it('Volver del form de crear reserva a la pag principal' , function(){
         browser.get( 'http://localhost:4200/crear-reserva');
-
-
+        browser.sleep(1000);
         element(by.id('btnVolverPrincipal')).click();
-
+        browser.sleep(1000);
         expect(browser.getCurrentUrl()).toBe('http://localhost:4200/principal');
+        browser.sleep(1000);
 
     });
 
     it ('Enlace, reserva', function(){
         browser.get( 'http://localhost:4200/');
+        browser.sleep(1000);
         element(by.id('eliminar-reserva')).click();
-
-        expect(browser.getCurrentUrl()).toBe('http://localhost:4200/eliminar-reserva');
+        browser.sleep(1000);
+        expect(browser.getCurrentUrl()).toBe('http://localhost:4200/eliminar-reserva');        
         browser.sleep(1000);
     });
 

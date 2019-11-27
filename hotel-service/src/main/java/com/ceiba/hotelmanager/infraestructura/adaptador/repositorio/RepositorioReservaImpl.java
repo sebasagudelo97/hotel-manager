@@ -20,13 +20,11 @@ public class RepositorioReservaImpl implements RepositorioReserva {
     private ModelMapper modelMapper=new ModelMapper();
     private ConvertidorListaReserva convertidorListaReserva=new ConvertidorListaReserva();
     private RepositorioReservaJpa repositorioReservaJpa;
-    private ConvertidorUsuario convertidorUsuario;
-    private ConvertidorFactura convertidorFactura;
+    ConvertidorUsuario convertidorUsuario = new ConvertidorUsuario();
+    ConvertidorFactura convertidorFactura = new ConvertidorFactura();
 
-    public RepositorioReservaImpl(RepositorioReservaJpa repositorioReservaJpa, ConvertidorUsuario convertidorUsuario, ConvertidorFactura convertidorFactura) {
+    public RepositorioReservaImpl(RepositorioReservaJpa repositorioReservaJpa) {
         this.repositorioReservaJpa = repositorioReservaJpa;
-        this.convertidorUsuario = convertidorUsuario;
-        this.convertidorFactura = convertidorFactura;
     }
 
     @Override

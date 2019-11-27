@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-27T18:47:30" hostname="SEBASTIAN-AGUDELO" time="0.104">
+  <properties/>
+  <testcase name="listarUsuarioTest()" classname="com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest" time="0.035"/>
+  <testcase name="crearUsuario()" classname="com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest" time="0.026"/>
+  <testcase name="eliminarUsuarioTest()" classname="com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest" time="0.04"/>
+  <system-out><![CDATA[2019-11-27 13:47:30.375  INFO 11256 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest], using SpringBootContextLoader
+2019-11-27 13:47:30.377  INFO 11256 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-27 13:47:30.389  INFO 11256 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-27 13:47:30.390  INFO 11256 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@53e1b2b6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2c026143, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3a560823, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7064400c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e4e38b4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11f94c47, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b64594b, org.springframework.test.context.event.EventPublishingTestExecutionListener@49521e0b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1686040d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d46e9ee, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@74d14f0c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2daaa5db, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@b2a7a0f]
+2019-11-27 13:47:30.399  INFO 11256 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@11efea55 testClass = ControladorUsuarioTest, testInstance = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest@6d8535b6, testMethod = listarUsuarioTest@ControladorUsuarioTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@e4e9b5f testClass = ControladorUsuarioTest, locations = '{}', classes = '{class com.ceiba.hotelmanager.HotelmanagerApplication, class com.ceiba.hotelmanager.HotelmanagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49bef6b8, [ImportsContextCustomizer@225fd2d2 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7220a823, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7754c9b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3e81d8ae], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2d2a6cac]; rollback [true]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /usuario
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = [{"idUsuario":1,"cedulaCiudadania":1036960221,"primerNombre":"Juan","segundoNombre":"Sebastian","primerApellido":"Agudelo","segundoApellido":"Mejia","numeroCelular":"3144568565"},{"idUsuario":2,"cedulaCiudadania":1036960333,"primerNombre":"Juanes","segundoNombre":"Sebastian","primerApellido":"Perez","segundoApellido":"Mejia","numeroCelular":"3144568566"},{"idUsuario":3,"cedulaCiudadania":1046960333,"primerNombre":"Maria","segundoNombre":"Alejandra","primerApellido":"Agudelo","segundoApellido":"Mejia","numeroCelular":"3144568536"}]
+    Session Attrs = {}
+
+Handler:
+             Type = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuario
+           Method = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuario#listarUsuario()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"idUsuario":9,"cedulaCiudadania":1036960221,"primerNombre":"Juan","segundoNombre":"Sebastian","primerApellido":"Agudelo","segundoApellido":"Mejia","numeroCelular":"3144568565"},{"idUsuario":10,"cedulaCiudadania":1036960333,"primerNombre":"Juanes","segundoNombre":"Sebastian","primerApellido":"Perez","segundoApellido":"Mejia","numeroCelular":"3144568566"},{"idUsuario":11,"cedulaCiudadania":1046960333,"primerNombre":"Maria","segundoNombre":"Alejandra","primerApellido":"Agudelo","segundoApellido":"Mejia","numeroCelular":"3144568536"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2019-11-27 13:47:30.431  INFO 11256 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@11efea55 testClass = ControladorUsuarioTest, testInstance = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest@6d8535b6, testMethod = listarUsuarioTest@ControladorUsuarioTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@e4e9b5f testClass = ControladorUsuarioTest, locations = '{}', classes = '{class com.ceiba.hotelmanager.HotelmanagerApplication, class com.ceiba.hotelmanager.HotelmanagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49bef6b8, [ImportsContextCustomizer@225fd2d2 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7220a823, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7754c9b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3e81d8ae], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2019-11-27 13:47:30.435  INFO 11256 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@11efea55 testClass = ControladorUsuarioTest, testInstance = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest@7868eb74, testMethod = crearUsuario@ControladorUsuarioTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@e4e9b5f testClass = ControladorUsuarioTest, locations = '{}', classes = '{class com.ceiba.hotelmanager.HotelmanagerApplication, class com.ceiba.hotelmanager.HotelmanagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49bef6b8, [ImportsContextCustomizer@225fd2d2 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7220a823, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7754c9b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3e81d8ae], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2d2a6cac]; rollback [true]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /usuario
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
+             Body = {"idUsuario":1,"cedulaCiudadania":1036960221,"primerNombre":"Juan","segundoNombre":"Sebastian","primerApellido":"Agudelo","segundoApellido":"Mejia","numeroCelular":"3144568565"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuario
+           Method = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuario#guardarUsuario(ComandoUsuario)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2019-11-27 13:47:30.459  INFO 11256 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@11efea55 testClass = ControladorUsuarioTest, testInstance = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest@7868eb74, testMethod = crearUsuario@ControladorUsuarioTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@e4e9b5f testClass = ControladorUsuarioTest, locations = '{}', classes = '{class com.ceiba.hotelmanager.HotelmanagerApplication, class com.ceiba.hotelmanager.HotelmanagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49bef6b8, [ImportsContextCustomizer@225fd2d2 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7220a823, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7754c9b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3e81d8ae], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2019-11-27 13:47:30.463  INFO 11256 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@11efea55 testClass = ControladorUsuarioTest, testInstance = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest@21408f9a, testMethod = eliminarUsuarioTest@ControladorUsuarioTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@e4e9b5f testClass = ControladorUsuarioTest, locations = '{}', classes = '{class com.ceiba.hotelmanager.HotelmanagerApplication, class com.ceiba.hotelmanager.HotelmanagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49bef6b8, [ImportsContextCustomizer@225fd2d2 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7220a823, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7754c9b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3e81d8ae], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2d2a6cac]; rollback [true]
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /usuario/1036960221
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = {"idUsuario":1,"cedulaCiudadania":1036960221,"primerNombre":"Juan","segundoNombre":"Sebastian","primerApellido":"Agudelo","segundoApellido":"Mejia","numeroCelular":"3144568565"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuario
+           Method = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuario#elimiarUsuario(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2019-11-27 13:47:30.500  INFO 11256 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@11efea55 testClass = ControladorUsuarioTest, testInstance = com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest@21408f9a, testMethod = eliminarUsuarioTest@ControladorUsuarioTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@e4e9b5f testClass = ControladorUsuarioTest, locations = '{}', classes = '{class com.ceiba.hotelmanager.HotelmanagerApplication, class com.ceiba.hotelmanager.HotelmanagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49bef6b8, [ImportsContextCustomizer@225fd2d2 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7220a823, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7754c9b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3e81d8ae], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
