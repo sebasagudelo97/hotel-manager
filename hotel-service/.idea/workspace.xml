@@ -59,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ControladorUsuarioTest.listarUsuarioTest">
+  <component name="RunManager" selected="Gradle.ControladorUsuarioTest.eliminarUsuarioTest">
     <configuration name="ControladorReservaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -120,12 +120,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ControladorUsuarioTest.listarUsuarioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ControladorUsuarioTest.eliminarUsuarioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.listarUsuarioTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.eliminarUsuarioTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -140,12 +140,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FacturaEntidadTest.funcionamientoCorrectoGetterAndSetterFacturaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ControladorUsuarioTest.listarUsuarioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.entidad.FacturaEntidadTest.funcionamientoCorrectoGetterAndSetterFacturaTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.listarUsuarioTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -183,19 +183,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.run" />
-      <item itemvalue="Gradle.FacturaEntidadTest.funcionamientoCorrectoGetterAndSetterFacturaTest" />
       <item itemvalue="Gradle.ControladorUsuarioTest.crearUsuario" />
       <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
       <item itemvalue="Gradle.ControladorReservaTest" />
       <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
+      <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
         <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
         <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
         <item itemvalue="Gradle.ControladorReservaTest" />
         <item itemvalue="Gradle.ControladorUsuarioTest.crearUsuario" />
-        <item itemvalue="Gradle.FacturaEntidadTest.funcionamientoCorrectoGetterAndSetterFacturaTest" />
       </list>
     </recent_temporary>
   </component>
