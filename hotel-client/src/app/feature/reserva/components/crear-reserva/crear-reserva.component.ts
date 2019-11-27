@@ -36,7 +36,6 @@ export class CrearReservaComponent implements OnInit {
         text:`La reserva se ha creado con exito n/
               Fecha Ingreso: ${this.reserva.fechaIngreso} n/
               Fecha Salida:  ${this.reserva.fechaSalida}`,
-        timer:8000,
         showConfirmButton:true
       })
     })

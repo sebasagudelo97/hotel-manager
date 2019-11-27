@@ -4,7 +4,6 @@ import com.ceiba.hotelmanager.aplicacion.comando.ComandoReserva;
 import com.ceiba.hotelmanager.dominio.modelo.Factura;
 import com.ceiba.hotelmanager.dominio.modelo.Usuario;
 import com.ceiba.hotelmanager.testdatabuilder.dominio.modelo.UsuarioTestDataBuilder;
-import org.mockito.Mockito;
 
 import java.time.LocalDate;
 

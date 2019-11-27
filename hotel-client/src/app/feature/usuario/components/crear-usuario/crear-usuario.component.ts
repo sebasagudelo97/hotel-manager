@@ -32,7 +32,6 @@ export class CrearUsuarioComponent implements OnInit {
         icon:"success",
         text:`El usuario ${this.usuario.primerNombre} ${this.usuario.primerApellido} ha sido creado con exito`,
         title:'Creación exitosa!',
-        timer:8000,
         showConfirmButton:true
       })
     })
