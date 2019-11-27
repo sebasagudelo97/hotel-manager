@@ -30,6 +30,7 @@ describe( 'HotelManager interaction', function(){
         element(by.id('crear-usuario')).click();
 
         expect(browser.getCurrentUrl()).toBe('http://localhost:4200/crear-usuario');
+        browser.sleep(1000);
     });
 
     it('Crear usuario', function(){
@@ -60,7 +61,7 @@ describe( 'HotelManager interaction', function(){
         element(by.id('crear-reserva')).click();
 
         expect(browser.getCurrentUrl()).toBe('http://localhost:4200/crear-reserva');
-       
+        browser.sleep(1000);
 
     });
 
@@ -73,5 +74,34 @@ describe( 'HotelManager interaction', function(){
         element(by.id('inputFechaSalida')).sendKeys(reserva.fechaSalida);
         element(by.id('btnCrearReserva')).click();
         element(by.buttonText('OK')).click();
+    });
+
+    it('Volver del form de crear reserva a la pag principal' , function(){
+        browser.get( 'http://localhost:4200/crear-reserva');
+
+
+        element(by.id('btnVolverPrincipal')).click();
+
+        expect(browser.getCurrentUrl()).toBe('http://localhost:4200/principal');
+
+    });
+
+    it ('Enlace, reserva', function(){
+        browser.get( 'http://localhost:4200/');
+        element(by.id('eliminar-reserva')).click();
+
+        expect(browser.getCurrentUrl()).toBe('http://localhost:4200/eliminar-reserva');
+        browser.sleep(1000);
+    });
+
+    
+    it('Volver del form de eliminar reserva a la pag principal' , function(){
+        browser.get( 'http://localhost:4200/eliminar-reserva');
+
+
+        element(by.id('btnVolverPrincipal')).click();
+
+        expect(browser.getCurrentUrl()).toBe('http://localhost:4200/principal');
+
     });
 });

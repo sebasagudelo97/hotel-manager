@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-27T12:34:12" hostname="SEBASTIAN-AGUDELO" time="0.038">
+<testsuite name="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-27T13:17:52" hostname="SEBASTIAN-AGUDELO" time="0.066">
   <properties/>
-  <testcase name="handleAllExceptionIncorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.032"/>
-  <testcase name="handleAllExceptionCorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.0"/>
-  <testcase name="instanciaCorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.002"/>
-  <system-out><![CDATA[2019-11-27 07:34:12.313 ERROR 4268 --- [    Test worker] c.c.h.i.error.ManejadorError             : Exception
+  <testcase name="handleAllExceptionIncorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.053"/>
+  <testcase name="handleAllExceptionCorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.001"/>
+  <testcase name="instanciaCorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.012"/>
+  <system-out><![CDATA[2019-11-27 08:17:52.146 ERROR 9520 --- [    Test worker] c.c.h.i.error.ManejadorError             : Exception
 
 java.lang.Exception: null
 	at com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest.handleAllExceptionIncorrecta(ManejadorErrorTest.java:23) [test/:na]

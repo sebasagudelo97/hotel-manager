@@ -27,10 +27,7 @@
             <td>{{ reserva.numeroHabitacion }}</td>
             <td>{{ reserva.cantidadPersonas }}</td>
             <td>{{ reserva.fechaIngreso }}</td>
-            <td>{{ reserva.fechaSalida }}</td>
-            <td>
-                <button type="button" name="actualizar" class="btn btn-primary btn-sm">Actualizar</button>
-            </td>
+            <td>{{ reserva.fechaSalida }}</td>           
             <td>
                 <button type="button" name="actualizar" class="btn btn-danger btn-sm" (click)='eliminar(reserva)'>Eliminar</button>
             </td>
@@ -39,7 +36,7 @@
       </table>
   
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-danger"  [routerLink]="['/principal']">Volver</button>   
+        <button type="button" class="btn btn-danger"  [routerLink]="['/principal']" id="btnVolverPrincipal">Volver</button>   
       </div>  
     </div>
   </div>
