@@ -5,42 +5,72 @@
       <div class="form-group col-md-6">
         <label for="inputCedula">Cedula ciudadania</label>
         <input type="number" class="form-control" id="inputCedula" placeholder="Cedula ciudadania"
-          [(ngModel)]="usuario.cedulaCiudadania" name="cedulaCiudadania">
+          [(ngModel)]="usuario.cedulaCiudadania" name="cedulaCiudadania" required #cedulaCiudadania="ngModel">
+          <div class="alert alert-danger" *ngIf="cedulaCiudadania.invalid && (cedulaCiudadania.dirty || cedulaCiudadania.touched)">
+            <div *ngIf="cedulaCiudadania.errors.required"> 
+                El numero de cedula es requerido
+            </div>
+          </div>
+
       </div>
       <div class="form-group col-md-6">
         <label for="inputNumeroCelular" >Numero Celular</label>
         <input type="number" class="form-control" id="inputNumeroCelular" placeholder="Numero Celular"
-          [(ngModel)]="usuario.numeroCelular" name="numeroCelular">
+          [(ngModel)]="usuario.numeroCelular" name="numeroCelular" required #numeroCelular="ngModel">
+          <div class="alert alert-danger" *ngIf="numeroCelular.invalid && (numeroCelular.dirty || numeroCelular.touched)">
+            <div *ngIf="numeroCelular.errors.required"> 
+                El numero de celular es requerido
+            </div>
+          </div>
       </div>
   
       <div class="form-group col-md-6">
         <label for="inputPrimerNombre">Primer Nombre</label>
         <input type="text" class="form-control" id="inputPrimerNombre" placeholder="Primer Nombre"
-          [(ngModel)]="usuario.primerNombre" name="primerNombre">
+          [(ngModel)]="usuario.primerNombre" name="primerNombre" required minlength="2" #primerNombre="ngModel">
+          <div class="alert alert-danger" *ngIf="primerNombre.invalid && (primerNombre.dirty || primerNombre.touched)">
+            <div *ngIf="primerNombre.errors.required"> 
+                El primer Nombre es requerido
+            </div>
+            <div *ngIf="primerNombre.errors.minlength"> 
+              El nombre debe de tener mas de 2 caracteres
+          </div>
+          </div>
       </div>
+
       <div class="form-group col-md-6">
         <label for="inputSegundoNombre">Segundo Nombre</label>
         <input type="text" class="form-control" id="inputSegundoNombre" placeholder="Segundo Nombre"
           [(ngModel)]="usuario.segundoNombre" name="segundoNombre">
       </div>
     </div>
+
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputPrimerApellido">Primer Apellido</label>
         <input type="text" class="form-control" id="inputPrimerApellido" placeholder="Primer Apellido"
-          [(ngModel)]="usuario.primerApellido" name="primerApellido">
+          [(ngModel)]="usuario.primerApellido" name="primerApellido" required #primerApellido="ngModel">
+          <div class="alert alert-danger" *ngIf="primerApellido.invalid && (primerApellido.dirty || primerApellido.touched)">
+            <div *ngIf="primerApellido.errors.required"> 
+                El primer Apellido es requerido
+            </div>
+          </div>
       </div>
+
       <div class="form-group col-md-6">
         <label for="inputSegundoApellido">Segundo Apellido</label>
         <input type="text" class="form-control" id="inputSegundoApellido" placeholder="Segundo Apellido"
           [(ngModel)]="usuario.segundoApellido" name="segundoApellido">
       </div>
     </div>
+
     <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="submit" class="btn btn-primary" (click)="OnSubmit(form)" id="btnCrearUsuario">Crear</button>
+      <button type="submit" class="btn btn-primary" (click)="OnSubmit(form)" id="btnCrearUsuario" [disabled]="cedulaCiudadania.invalid || numeroCelular.invalid || primerNombre.invalid || primerApellido.invalid">Crear</button>
     </div>
+
     <div class="btn-group" role="group" aria-label="Basic example">
       <button type="button" class="btn btn-danger"  [routerLink]="['/principal']" id="btnVolverPrincipal">Volver</button>   
     </div>   
+
   </form>
 </div>

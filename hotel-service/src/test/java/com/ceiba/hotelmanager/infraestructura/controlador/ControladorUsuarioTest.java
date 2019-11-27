@@ -2,6 +2,9 @@ package com.ceiba.hotelmanager.infraestructura.controlador;
 
 import com.ceiba.hotelmanager.HotelmanagerApplication;
 import com.ceiba.hotelmanager.aplicacion.comando.ComandoUsuario;
+import com.ceiba.hotelmanager.dominio.modelo.Usuario;
+import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioUsuarioImpl;
+import com.ceiba.hotelmanager.infraestructura.repositoriojpa.RepositorioUsuarioJpa;
 import com.ceiba.hotelmanager.testdatabuilder.aplicacion.ComandoUsuarioTestDataBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
@@ -16,10 +19,12 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = HotelmanagerApplication.class)
@@ -29,8 +34,12 @@ public class ControladorUsuarioTest {
 
     @Autowired
     private WebApplicationContext wac;
+
     @Autowired
     private ObjectMapper objectMapper;
+
+    @Autowired
+    private RepositorioUsuarioJpa repositorioUsuarioJpa;
 
     @Autowired
     private MockMvc mockMvc;
@@ -50,5 +59,29 @@ public class ControladorUsuarioTest {
         .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk());
+    }
+
+    @Test
+    public void listarUsuarioTest() throws Exception{
+        RepositorioUsuarioImpl repositorioUsuario = new RepositorioUsuarioImpl(repositorioUsuarioJpa);
+
+        Usuario primerUsuario = new Usuario(1L,1036960221L,"Juan", "Sebastian", "Agudelo", "Mejia", "3144568565");
+        repositorioUsuario.guardar(primerUsuario);
+
+        Usuario segundoUsuario = new Usuario(2L,1036960333L,"Juanes", "Sebastian", "Perez", "Mejia", "3144568566");
+        repositorioUsuario.guardar(segundoUsuario);
+
+        Usuario tercerUsuario = new Usuario(3L,1046960333L,"Maria", "Alejandra", "Agudelo", "Mejia", "3144568536");
+        repositorioUsuario.guardar(tercerUsuario);
+
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+        usuarios.add(primerUsuario);
+        usuarios.add(segundoUsuario);
+        usuarios.add(tercerUsuario);
+
+        mockMvc.perform(get("http://localhost:8080/usuario")
+        .contentType(MediaType.APPLICATION_JSON)
+        .content(objectMapper.writeValueAsString(usuarios))).andDo(print()).andExpect(status().isOk());
+
     }
 }

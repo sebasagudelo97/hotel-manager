@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/reserva/components/crear-reserva/crear-reserva.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/reserva/components/crear-reserva/crear-reserva.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/reserva/components/eliminar-reserva/eliminar-reserva.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/reserva/components/eliminar-reserva/eliminar-reserva.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/components/eliminar-usuario/eliminar-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/components/eliminar-usuario/eliminar-usuario.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/e2e-test/interaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/e2e-test/interaction.js" afterDir="false" />
-    </list>
+    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.run">
+  <component name="RunManager" selected="Gradle.ControladorUsuarioTest.listarUsuarioTest">
     <configuration name="ControladorReservaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -126,12 +120,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EntidadUsuarioTest.funcionamientoGetUsuarioEntidadTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ControladorUsuarioTest.listarUsuarioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.entidad.EntidadUsuarioTest.funcionamientoGetUsuarioEntidadTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.listarUsuarioTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -189,19 +183,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.run" />
-      <item itemvalue="Gradle.EntidadUsuarioTest.funcionamientoGetUsuarioEntidadTest" />
       <item itemvalue="Gradle.FacturaEntidadTest.funcionamientoCorrectoGetterAndSetterFacturaTest" />
       <item itemvalue="Gradle.ControladorUsuarioTest.crearUsuario" />
       <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
       <item itemvalue="Gradle.ControladorReservaTest" />
+      <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
         <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
         <item itemvalue="Gradle.ControladorReservaTest" />
         <item itemvalue="Gradle.ControladorUsuarioTest.crearUsuario" />
         <item itemvalue="Gradle.FacturaEntidadTest.funcionamientoCorrectoGetterAndSetterFacturaTest" />
-        <item itemvalue="Gradle.EntidadUsuarioTest.funcionamientoGetUsuarioEntidadTest" />
       </list>
     </recent_temporary>
   </component>

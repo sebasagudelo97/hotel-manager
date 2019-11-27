@@ -5,34 +5,61 @@
       <div class="form-group col-md-6">
         <label for="inputCedula">Numero cedula</label>
         <input type="number" class="form-control" id="inputCedula" placeholder="Cedula ciudadania"
-          [(ngModel)]="reserva.numeroCedula" name="numeroCedula">
+          [(ngModel)]="reserva.numeroCedula" name="numeroCedula" required #numeroCedula="ngModel">
+          <div class="alert alert-danger" *ngIf="numeroCedula.invalid && (numeroCedula.dirty || numeroCedula.touched)">
+            <div *ngIf="numeroCedula.errors.required"> 
+                El numero Cedula es requerido
+            </div>
+          </div>
       </div>
       <div class="form-group col-md-6">
         <label for="inputNumeroHabitacion">Numero Habitacion</label>
         <input type="text" class="form-control" id="inputNumeroHabitacion" placeholder="Numero Habitacion"
-          [(ngModel)]="reserva.numeroHabitacion" name="numeroHabitacion">
+          [(ngModel)]="reserva.numeroHabitacion" name="numeroHabitacion" required #numeroHabitacion="ngModel">
+          <div class="alert alert-danger" *ngIf="numeroHabitacion.invalid && (numeroHabitacion.dirty || numeroHabitacion.touched)">
+            <div *ngIf="numeroHabitacion.errors.required"> 
+                El numero de habitacion es requerido
+            </div>
+          </div>
       </div>
   
       <div class="form-group col-md-2">
         <label for="inputCantidadPersonas">Cantidad personas</label>
         <input type="number" class="form-control" id="inputCantidadPersonas" placeholder="cantidadPersonas"
-          [(ngModel)]="reserva.cantidadPersonas" name="cantidadPersonas">
+          [(ngModel)]="reserva.cantidadPersonas" name="cantidadPersonas" required #cantidadPersonas="ngModel">
+          <div class="alert alert-danger" *ngIf="cantidadPersonas.invalid && (cantidadPersonas.dirty || cantidadPersonas.touched)">
+            <div *ngIf="cantidadPersonas.errors.required"> 
+                La cantidad de personas es requerido
+            </div>
+          </div>
       </div>
+
       <div class="form-group col-md-4">
         <label for="inputFechaIngreso">Fecha Ingreso</label>
         <input type="date" class="form-control" id="inputFechaIngreso" placeholder="YYYY-MM-DD"
-          [(ngModel)]="reserva.fechaIngreso" name="fechaIngreso">
+          [(ngModel)]="reserva.fechaIngreso" name="fechaIngreso" required #fechaIngreso="ngModel">
+          <div class="alert alert-danger" *ngIf="fechaIngreso.invalid && (fechaIngreso.dirty || fechaIngreso.touched)">
+            <div *ngIf="fechaIngreso.errors.required"> 
+                La fecha de ingreso es requerida
+            </div>
+          </div>
       </div>
     </div>
+
     <div class="form-row">
       <div class="form-group col-md-4">
         <label for="inputFechaSalida">Fecha salida</label>
         <input type="date" class="form-control" id="inputFechaSalida" placeholder="YYYY-MM-DD"
-          [(ngModel)]="reserva.fechaSalida" name="fechaSalida">
+          [(ngModel)]="reserva.fechaSalida" name="fechaSalida" required #fechaSalida="ngModel">
+          <div class="alert alert-danger" *ngIf="fechaSalida.invalid && (fechaSalida.dirty || fechaSalida.touched)">
+            <div *ngIf="fechaSalida.errors.required"> 
+                La fecha de salida es requerida
+            </div>
+          </div>
       </div>
     </div>
     <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="submit" class="btn btn-primary" (click)="OnSubmit(form)" id="btnCrearReserva">Crear</button>
+      <button type="submit" class="btn btn-primary" (click)="OnSubmit(form)" id="btnCrearReserva" [disabled]="numeroCedula.invalid || numeroHabitacion.invalid || cantidadPersonas.invalid || fechaIngreso.invalid || fechaSalida.invalid">Crear</button>
     </div>
     <div class="btn-group" role="group" aria-label="Basic example">
       <button type="button" class="btn btn-danger"  [routerLink]="['/principal']" id="btnVolverPrincipal">Volver</button>   
