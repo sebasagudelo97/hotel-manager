@@ -1,5 +1,6 @@
 package com.ceiba.hotelmanager.infraestructura.entidad;
 
+import com.ceiba.hotelmanager.dominio.validador.ValidadorArgumento;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class HabitacionEntidad {
+    private static final String ESTE_CAMPO_DEBE_SER_OBLIGATORIO="El campo debe de ser obligatorio";
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,4 +26,6 @@ public class HabitacionEntidad {
 
     @Column(name = "valorHabitacion", nullable = false)
     private Long valorHabitacion;
+
 }
+

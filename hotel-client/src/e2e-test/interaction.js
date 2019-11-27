@@ -12,7 +12,7 @@ describe( 'HotelManager interaction', function(){
 
     reserva = {
         numeroCedula : 1036960221,
-        numeroHabitacion : '201',
+        numeroHabitacion : '202',
         cantidadPersonas : 2,
         fechaIngreso : '5/15/2019',
         fechaSalida : '5/20/2019'
@@ -72,5 +72,6 @@ describe( 'HotelManager interaction', function(){
         element(by.id('inputFechaIngreso')).sendKeys(reserva.fechaIngreso);
         element(by.id('inputFechaSalida')).sendKeys(reserva.fechaSalida);
         element(by.id('btnCrearReserva')).click();
+        element(by.buttonText('OK')).click();
     });
 });

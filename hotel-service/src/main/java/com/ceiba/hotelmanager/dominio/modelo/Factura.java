@@ -14,6 +14,7 @@ public class Factura {
 
     public Factura(LocalDate fechaRegistro, int valorPagar) {
         ValidadorArgumento.validarCampoObligatorio(valorPagar,EL_CAMPO_DEBE_SER_OBLIGATORIO);
+        ValidadorArgumento.validarCampoObligatorio(fechaRegistro,EL_CAMPO_DEBE_SER_OBLIGATORIO);
 
         this.fechaRegistro = fechaRegistro;
         this.valorPagar = valorPagar;

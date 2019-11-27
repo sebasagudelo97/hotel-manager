@@ -1,5 +1,6 @@
 package com.ceiba.hotelmanager.infraestructura.entidad;
 
+import com.ceiba.hotelmanager.dominio.validador.ValidadorArgumento;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
@@ -9,6 +10,8 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "factura")
 public class FacturaEntidad {
+
+    private static final String EL_CAMPO_DEBE_SER_OBLIGATORIO="El campo debe de ser obligatorio";
 
     @Id
     @GeneratedValue
@@ -47,6 +50,9 @@ public class FacturaEntidad {
     }
 
     public FacturaEntidad(LocalDate fechaRegistro, int valorPagar) {
+        ValidadorArgumento.validarCampoObligatorio(valorPagar,EL_CAMPO_DEBE_SER_OBLIGATORIO);
+        ValidadorArgumento.validarCampoObligatorio(fechaRegistro,EL_CAMPO_DEBE_SER_OBLIGATORIO);
+
         this.fechaRegistro = fechaRegistro;
         this.valorPagar = valorPagar;
     }

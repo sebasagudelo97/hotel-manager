@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.dominio.servicio.usuario.ServicioCrearUsuarioTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T11:52:40" hostname="SEBASTIAN-AGUDELO" time="0.002">
+<testsuite name="com.ceiba.hotelmanager.dominio.servicio.usuario.ServicioCrearUsuarioTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T12:33:59" hostname="SEBASTIAN-AGUDELO" time="0.002">
   <properties/>
   <testcase name="validarExistenciaDeUsuarioTest()" classname="com.ceiba.hotelmanager.dominio.servicio.usuario.ServicioCrearUsuarioTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
