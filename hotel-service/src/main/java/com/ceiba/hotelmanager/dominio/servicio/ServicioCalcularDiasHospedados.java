@@ -1,14 +1,10 @@
 package com.ceiba.hotelmanager.dominio.servicio;
-
-
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDate;
 
-@Component
-public final class ServicioCalcularDiasHospedados {
 
-    private ServicioCalcularDiasHospedados(){}
+public class ServicioCalcularDiasHospedados {
+
+    public ServicioCalcularDiasHospedados(){}
 
     public static LocalDate fechaActual(){
         return LocalDate.now();

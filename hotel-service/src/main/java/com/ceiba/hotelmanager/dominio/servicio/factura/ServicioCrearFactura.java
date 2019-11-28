@@ -4,15 +4,13 @@ import com.ceiba.hotelmanager.dominio.modelo.Factura;
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
 import com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDescuentoHabitacion;
 import com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDiasHospedados;
-import org.springframework.stereotype.Service;
 
-@Service
-public final class ServicioCrearFactura {
+public class ServicioCrearFactura {
 
     private static ServicioCalcularDescuentoHabitacion servicioCalcularDescuentoHabitacion;
 
 
-    private ServicioCrearFactura(ServicioCalcularDescuentoHabitacion servicioCalcularDescuentoHabitacion) {
+   public ServicioCrearFactura(ServicioCalcularDescuentoHabitacion servicioCalcularDescuentoHabitacion) {
         this.servicioCalcularDescuentoHabitacion = servicioCalcularDescuentoHabitacion;
     }
 

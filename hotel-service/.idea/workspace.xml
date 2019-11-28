@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/e2e-test/interaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/e2e-test/interaction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/shared/services/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/shared/services/usuario.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +21,28 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hotelmanager" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hotelmanager" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hotelmanager" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -64,26 +83,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.run">
-    <configuration name="ControladorReservaTest.crearReserva" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorReservaTest.crearReserva&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="ControladorReservaTest.eliminarReservaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -164,6 +163,25 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="hotel-service [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -187,19 +205,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.run" />
-      <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
       <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
       <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
       <item itemvalue="Gradle.ControladorReservaTest.listarReservasTest" />
       <item itemvalue="Gradle.ControladorReservaTest.eliminarReservaTest" />
+      <item itemvalue="Gradle.hotel-service [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.hotel-service [test]" />
         <item itemvalue="Gradle.ControladorReservaTest.listarReservasTest" />
         <item itemvalue="Gradle.ControladorReservaTest.eliminarReservaTest" />
         <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
         <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
-        <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
       </list>
     </recent_temporary>
   </component>
@@ -261,16 +279,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/infraestructura/convertidor/reserva/ConvertidorListaReserva.java</url>
           <line>17</line>
           <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/dominio/servicio/habitacion/ServicioCambiarEstadoHabitacion.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/dominio/servicio/habitacion/ServicioCambiarEstadoHabitacion.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/infraestructura/adaptador/repositorio/RepositorioHabitacionImpl.java</url>

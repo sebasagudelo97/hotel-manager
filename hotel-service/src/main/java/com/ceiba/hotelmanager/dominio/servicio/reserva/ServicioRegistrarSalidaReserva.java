@@ -3,9 +3,7 @@ package com.ceiba.hotelmanager.dominio.servicio.reserva;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioReserva;
 import com.ceiba.hotelmanager.dominio.servicio.habitacion.ServicioCambiarEstadoHabitacion;
 import com.ceiba.hotelmanager.infraestructura.entidad.ReservaEntidad;
-import org.springframework.stereotype.Service;
 
-@Service
 public class ServicioRegistrarSalidaReserva {
     private RepositorioReserva repositorioReserva;
     private ServicioCambiarEstadoHabitacion servicioCambiarEstadoHabitacion;

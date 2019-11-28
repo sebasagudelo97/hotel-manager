@@ -6,9 +6,9 @@ import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioReserva;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioUsuario;
 import com.ceiba.hotelmanager.dominio.servicio.factura.ServicioCrearFactura;
 import com.ceiba.hotelmanager.dominio.servicio.habitacion.ServicioCambiarEstadoHabitacion;
-import org.springframework.stereotype.Service;
 
-@Service
+
+
 public class ServicioCrearReserva {
 
     private static final String YA_SE_ENCUENTRA_UNA_RESERVA_CON_ESTA_CEDULA="Ya se encuentra registrada una reserva con este numero de cedula";

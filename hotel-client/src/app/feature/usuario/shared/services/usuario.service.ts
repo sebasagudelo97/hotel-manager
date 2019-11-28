@@ -8,12 +8,13 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class UsuarioService {
 
+  // hacer uso del environment
   private urlEndPoint: string = 'http://localhost:8080';  
   
   constructor(private http: HttpClient) { }
 
   create(usuario: Usuario): Observable<Usuario> {
-    return this.http.post<Usuario>(this.urlEndPoint + '/usuario', usuario)    
+    return this.http.post<Usuario>(`${this.urlEndPoint}/usuario`, usuario)    
   }
 
   listUsuarios(): Observable<Usuario[]> {

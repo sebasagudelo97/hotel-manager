@@ -3,9 +3,7 @@ package com.ceiba.hotelmanager.dominio.servicio.habitacion;
 import com.ceiba.hotelmanager.dominio.excepcion.ExcepcionEstadoHabitacion;
 import com.ceiba.hotelmanager.dominio.modelo.Habitacion;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioHabitacion;
-import org.springframework.stereotype.Service;
 
-@Service
 public class ServicioCambiarEstadoHabitacion {
 
     private static final String LA_HABITACION_SE_ENCUENTRA_OCUPADA="La habitacion se encuentra ocupada";
