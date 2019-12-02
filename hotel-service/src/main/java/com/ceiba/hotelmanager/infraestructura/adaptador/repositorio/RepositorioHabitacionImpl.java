@@ -1,6 +1,7 @@
 package com.ceiba.hotelmanager.infraestructura.adaptador.repositorio;
 
 import com.ceiba.hotelmanager.dominio.modelo.Habitacion;
+import com.ceiba.hotelmanager.dominio.modelo.dto.HabitacionDto;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioHabitacion;
 import com.ceiba.hotelmanager.infraestructura.entidad.HabitacionEntidad;
 import com.ceiba.hotelmanager.infraestructura.repositoriojpa.RepositorioHabitacionJpa;
@@ -30,14 +31,14 @@ public class RepositorioHabitacionImpl implements RepositorioHabitacion {
     }
 
     @Override
-    public Habitacion obtenerHabitacionByNumeroHabitacion(String numeroHabitacion) {
+    public HabitacionDto obtenerHabitacionByNumeroHabitacion(String numeroHabitacion) {
         HabitacionEntidad habitacionEntidad = repositorioHabitacionJpa.filtroPorNumeroHabitacion(numeroHabitacion);
-        return modelMapper.map(habitacionEntidad, Habitacion.class);
+        return modelMapper.map(habitacionEntidad, HabitacionDto.class);
 
     }
 
     @Override
-    public void guardar(Habitacion habitacion) {
+    public void guardar(HabitacionDto habitacion) {
         HabitacionEntidad habitacionEntidad = modelMapper.map(habitacion,HabitacionEntidad.class );
         this.repositorioHabitacionJpa.save(habitacionEntidad);
     }

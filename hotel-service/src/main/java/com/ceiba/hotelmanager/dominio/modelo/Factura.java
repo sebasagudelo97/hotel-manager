@@ -20,7 +20,10 @@ public class Factura {
         this.valorPagar = valorPagar;
     }
 
-    public Factura(){}
+    public Factura (){
+
+    }
+
     public LocalDate getFechaRegistro() {
         return fechaRegistro;
     }

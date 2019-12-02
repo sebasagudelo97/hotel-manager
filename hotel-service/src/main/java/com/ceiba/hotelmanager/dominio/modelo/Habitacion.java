@@ -21,7 +21,6 @@ public class Habitacion {
         this.valorHabitacion=valorHabitacion;
     }
 
-    public Habitacion(){}
 
     public int getIdHabitacion() {
         return idHabitacion;

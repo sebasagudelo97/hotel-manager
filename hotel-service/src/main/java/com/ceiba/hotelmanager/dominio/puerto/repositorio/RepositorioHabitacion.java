@@ -2,11 +2,12 @@ package com.ceiba.hotelmanager.dominio.puerto.repositorio;
 
 
 import com.ceiba.hotelmanager.dominio.modelo.Habitacion;
+import com.ceiba.hotelmanager.dominio.modelo.dto.HabitacionDto;
 
 public interface RepositorioHabitacion {
 
     boolean estadoHabitacion(String numeroHabitacion);
     Long valorHabitacion(String numeroHabitacion);
-    Habitacion obtenerHabitacionByNumeroHabitacion(String numeroHabitacion);
-    void guardar(Habitacion habitacion);
+    HabitacionDto obtenerHabitacionByNumeroHabitacion(String numeroHabitacion);
+    void guardar(HabitacionDto habitacion);
 }

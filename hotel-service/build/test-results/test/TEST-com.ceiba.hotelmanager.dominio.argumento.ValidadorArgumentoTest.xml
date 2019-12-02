@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-12-02T12:29:04" hostname="SEBASTIAN-AGUDELO" time="0.19">
+<testsuite name="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-12-02T15:30:55" hostname="SEBASTIAN-AGUDELO" time="0.182">
   <properties/>
-  <testcase name="validarLongitudArgumentoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.08"/>
-  <testcase name="validarHabitacionEncontradaDelQuintoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.005"/>
-  <testcase name="validarHabitacionEncontradaDelSegundoAlCuartoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.007"/>
-  <testcase name="validarHabitacionNoEncontradaDelQuintoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.01"/>
-  <testcase name="validarCampoObligatorioTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.002"/>
-  <testcase name="validarElNoCorrectoIngresoDeHabitacionTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.002"/>
-  <testcase name="validarIngresoIncorrectoPeronasPorHabitacionDelQuintoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.001"/>
-  <testcase name="validarIngresoIncorrectoPersonasPorHabitacionDelSegundoAlCuartoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.002"/>
-  <testcase name="validarHabitacionNoEncontradaDelSegundoAlCuartoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.005"/>
-  <testcase name="validarRegistroIncorrectoDeFechaTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.004"/>
+  <testcase name="validarLongitudArgumentoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.093"/>
+  <testcase name="validarHabitacionEncontradaDelQuintoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.013"/>
+  <testcase name="validarHabitacionEncontradaDelSegundoAlCuartoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.005"/>
+  <testcase name="validarHabitacionNoEncontradaDelQuintoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.02"/>
+  <testcase name="validarCampoObligatorioTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.003"/>
+  <testcase name="validarElNoCorrectoIngresoDeHabitacionTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.004"/>
+  <testcase name="validarIngresoIncorrectoPeronasPorHabitacionDelQuintoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.002"/>
+  <testcase name="validarIngresoIncorrectoPersonasPorHabitacionDelSegundoAlCuartoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.001"/>
+  <testcase name="validarHabitacionNoEncontradaDelSegundoAlCuartoPisoTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.003"/>
+  <testcase name="validarRegistroIncorrectoDeFechaTest()" classname="com.ceiba.hotelmanager.dominio.argumento.ValidadorArgumentoTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

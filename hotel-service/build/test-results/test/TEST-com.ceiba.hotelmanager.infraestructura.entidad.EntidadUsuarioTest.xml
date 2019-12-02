@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.infraestructura.entidad.EntidadUsuarioTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T12:29:20" hostname="SEBASTIAN-AGUDELO" time="0.0">
+<testsuite name="com.ceiba.hotelmanager.infraestructura.entidad.EntidadUsuarioTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T15:31:19" hostname="SEBASTIAN-AGUDELO" time="0.0">
   <properties/>
   <testcase name="funcionamientoGetUsuarioEntidadTest()" classname="com.ceiba.hotelmanager.infraestructura.entidad.EntidadUsuarioTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

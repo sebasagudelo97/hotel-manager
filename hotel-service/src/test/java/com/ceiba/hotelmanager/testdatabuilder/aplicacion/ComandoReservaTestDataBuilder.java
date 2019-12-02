@@ -3,6 +3,7 @@ package com.ceiba.hotelmanager.testdatabuilder.aplicacion;
 import com.ceiba.hotelmanager.aplicacion.comando.ComandoReserva;
 import com.ceiba.hotelmanager.dominio.modelo.Factura;
 import com.ceiba.hotelmanager.dominio.modelo.Usuario;
+import com.ceiba.hotelmanager.testdatabuilder.dominio.modelo.FacturaTestDataBuilder;
 import com.ceiba.hotelmanager.testdatabuilder.dominio.modelo.UsuarioTestDataBuilder;
 
 import java.time.LocalDate;
@@ -16,7 +17,7 @@ public class ComandoReservaTestDataBuilder {
     private static final int CANTIDAD_PERSONAS=2;
     private static final LocalDate FECHA_INGRESO=LocalDate.of(2019,5,15);
     private static final LocalDate FECHA_SALIDA=LocalDate.of(2019,5,20);
-    private static final Factura FACTURA= new Factura();
+    private static final Factura FACTURA= new FacturaTestDataBuilder().build();
 
     private int idReserva;
     private Long numeroCedula;

@@ -6,6 +6,7 @@ import com.ceiba.hotelmanager.dominio.modelo.Factura;
 import com.ceiba.hotelmanager.dominio.modelo.Habitacion;
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
 import com.ceiba.hotelmanager.dominio.modelo.Usuario;
+import com.ceiba.hotelmanager.dominio.modelo.dto.HabitacionDto;
 import com.ceiba.hotelmanager.dominio.servicio.habitacion.ServicioCambiarEstadoHabitacion;
 import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioHabitacionImpl;
 import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioReservaImpl;
@@ -74,7 +75,7 @@ public class ControladorReservaTest {
     @Test
     public void crearReserva() throws Exception{
         ComandoReserva comandoReserva= new ComandoReservaTestDataBuilder().build();
-        Habitacion hab = new Habitacion("201", true, 40000L);
+        HabitacionDto hab = new HabitacionDto("201", true, 40000L);
         RepositorioHabitacionImpl repositorioHabitacion = new RepositorioHabitacionImpl(repositorioHabitacionJpa);
         repositorioHabitacion.guardar(hab);
 
@@ -96,9 +97,9 @@ public class ControladorReservaTest {
         RepositorioHabitacionImpl repositorioHabitacion = new RepositorioHabitacionImpl(repositorioHabitacionJpa);
         RepositorioUsuarioImpl repositorioUsuario = new RepositorioUsuarioImpl(repositorioUsuarioJpa);
 
-        Habitacion primeraHabitacion = new Habitacion("201", true, 40000L);
+        HabitacionDto primeraHabitacion = new HabitacionDto("201", true, 40000L);
         repositorioHabitacion.guardar(primeraHabitacion);
-        Habitacion segundaHabitacion = new Habitacion("202", true, 40000L);
+        HabitacionDto segundaHabitacion = new HabitacionDto("202", true, 40000L);
         repositorioHabitacion.guardar(segundaHabitacion);
 
         Usuario primerUsuario = new Usuario(1L,1036960221L,"Juan", "Sebastian", "Agudelo", "Mejia", "3144568565");

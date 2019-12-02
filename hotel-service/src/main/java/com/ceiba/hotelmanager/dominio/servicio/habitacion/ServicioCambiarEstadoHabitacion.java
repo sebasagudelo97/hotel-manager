@@ -2,6 +2,7 @@ package com.ceiba.hotelmanager.dominio.servicio.habitacion;
 
 import com.ceiba.hotelmanager.dominio.excepcion.ExcepcionEstadoHabitacion;
 import com.ceiba.hotelmanager.dominio.modelo.Habitacion;
+import com.ceiba.hotelmanager.dominio.modelo.dto.HabitacionDto;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioHabitacion;
 
 public class ServicioCambiarEstadoHabitacion {
@@ -24,7 +25,7 @@ public class ServicioCambiarEstadoHabitacion {
     }
 
     public void cambiarEstadoHabitacion(String numeroHabitacion){
-        Habitacion habitacion = repositorioHabitacion.obtenerHabitacionByNumeroHabitacion(numeroHabitacion);
+        HabitacionDto habitacion = repositorioHabitacion.obtenerHabitacionByNumeroHabitacion(numeroHabitacion);
         if (habitacion.isEstadoHabitacion()){
             habitacion.setEstadoHabitacion(false);
         }else if (!habitacion.isEstadoHabitacion()){
