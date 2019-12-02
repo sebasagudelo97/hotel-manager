@@ -1,9 +1,6 @@
 package com.ceiba.hotelmanager.dominio.servicio;
 
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioHabitacion;
-import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioHabitacionImpl;
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDate;
 
 

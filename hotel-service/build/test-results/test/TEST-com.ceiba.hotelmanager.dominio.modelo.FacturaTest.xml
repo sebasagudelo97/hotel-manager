@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.dominio.modelo.FacturaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-28T16:30:41" hostname="SEBASTIAN-AGUDELO" time="0.034">
+<testsuite name="com.ceiba.hotelmanager.dominio.modelo.FacturaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T12:29:04" hostname="SEBASTIAN-AGUDELO" time="0.057">
   <properties/>
-  <testcase name="funcionamientoGetterAndSetterDeFacturaTest()" classname="com.ceiba.hotelmanager.dominio.modelo.FacturaTest" time="0.034"/>
+  <testcase name="funcionamientoGetterAndSetterDeFacturaTest()" classname="com.ceiba.hotelmanager.dominio.modelo.FacturaTest" time="0.057"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

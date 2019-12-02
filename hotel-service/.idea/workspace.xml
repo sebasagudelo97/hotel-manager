@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/shared/services/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/shared/services/usuario.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

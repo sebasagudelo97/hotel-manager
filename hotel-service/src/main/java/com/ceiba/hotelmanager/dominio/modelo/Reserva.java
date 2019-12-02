@@ -104,4 +104,5 @@ public class Reserva {
     public void setNumeroCedula(Long numeroCedula) {
         this.numeroCedula = numeroCedula;
     }
+
 }
