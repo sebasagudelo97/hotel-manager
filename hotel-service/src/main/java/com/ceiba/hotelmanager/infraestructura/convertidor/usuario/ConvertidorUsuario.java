@@ -1,6 +1,7 @@
 package com.ceiba.hotelmanager.infraestructura.convertidor.usuario;
 
 import com.ceiba.hotelmanager.dominio.modelo.Usuario;
+import com.ceiba.hotelmanager.dominio.modelo.dto.UsuarioDto;
 import com.ceiba.hotelmanager.infraestructura.entidad.UsuarioEntidad;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
@@ -15,9 +16,9 @@ public class ConvertidorUsuario {
         return modelMapper.map(usuario, UsuarioEntidad.class);
     }
 
-    public List<Usuario> convertirListUsuarioEntidadAListUsuario(List<UsuarioEntidad> listUsuarioEntidad, List<Usuario> listUsuario){
+    public List<UsuarioDto> convertirListUsuarioEntidadAListUsuario(List<UsuarioEntidad> listUsuarioEntidad, List<UsuarioDto> listUsuario){
         for(UsuarioEntidad usuarioEntidad: listUsuarioEntidad) {
-            Usuario usuario= modelMapper.map(usuarioEntidad, Usuario.class);
+            UsuarioDto usuario= modelMapper.map(usuarioEntidad, UsuarioDto.class);
             listUsuario.add(usuario);
         }
         return listUsuario;

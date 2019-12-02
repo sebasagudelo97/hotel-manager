@@ -38,9 +38,6 @@ public class Reserva {
         this.factura = factura;
     }
 
-    public Reserva ()
-    {}
-
     public int getIdReserva() {
         return idReserva;
     }

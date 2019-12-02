@@ -5,6 +5,7 @@ import com.ceiba.hotelmanager.aplicacion.comando.consulta.manejador.usuario.Mane
 import com.ceiba.hotelmanager.aplicacion.comando.consulta.manejador.usuario.ManejadorListarUsuario;
 import com.ceiba.hotelmanager.aplicacion.comando.manejador.usuario.ManejadorCrearUsuario;
 import com.ceiba.hotelmanager.dominio.modelo.Usuario;
+import com.ceiba.hotelmanager.dominio.modelo.dto.UsuarioDto;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,7 +32,7 @@ public class ControladorUsuario {
     }
 
     @GetMapping
-    public List<Usuario> listarUsuario(){
+    public List<UsuarioDto> listarUsuario(){
         return this.manejadorListarUsuario.ejecutar();
     }
 

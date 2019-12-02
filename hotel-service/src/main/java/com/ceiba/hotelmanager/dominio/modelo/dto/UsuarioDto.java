@@ -1,5 +1,7 @@
 package com.ceiba.hotelmanager.dominio.modelo.dto;
 
+import com.ceiba.hotelmanager.dominio.modelo.Usuario;
+
 public class UsuarioDto {
 
     private Long idUsuario;
@@ -12,6 +14,16 @@ public class UsuarioDto {
 
     public UsuarioDto(){
 
+    }
+
+    public UsuarioDto(Long idUsuario, Long cedulaCiudadania, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String numeroCelular) {
+        this.idUsuario = idUsuario;
+        this.cedulaCiudadania = cedulaCiudadania;
+        this.primerNombre = primerNombre;
+        this.segundoNombre = segundoNombre;
+        this.primerApellido = primerApellido;
+        this.segundoApellido = segundoApellido;
+        this.numeroCelular = numeroCelular;
     }
 
     public Long getIdUsuario() {
@@ -69,4 +81,9 @@ public class UsuarioDto {
     public void setNumeroCelular(String numeroCelular) {
         this.numeroCelular = numeroCelular;
     }
+
+    public Usuario build(){
+        return new Usuario(this.idUsuario,this.cedulaCiudadania,this.primerNombre,this.segundoNombre,this.primerApellido,this.segundoApellido,this.numeroCelular);
+    }
+
 }

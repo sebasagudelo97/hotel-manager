@@ -3,13 +3,10 @@ package com.ceiba.hotelmanager.infraestructura.controlador;
 import com.ceiba.hotelmanager.HotelmanagerApplication;
 import com.ceiba.hotelmanager.aplicacion.comando.ComandoReserva;
 import com.ceiba.hotelmanager.dominio.modelo.Factura;
-import com.ceiba.hotelmanager.dominio.modelo.Habitacion;
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
 import com.ceiba.hotelmanager.dominio.modelo.Usuario;
 import com.ceiba.hotelmanager.dominio.modelo.dto.HabitacionDto;
-import com.ceiba.hotelmanager.dominio.servicio.habitacion.ServicioCambiarEstadoHabitacion;
 import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioHabitacionImpl;
-import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioReservaImpl;
 import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioUsuarioImpl;
 import com.ceiba.hotelmanager.infraestructura.convertidor.factura.ConvertidorFactura;
 import com.ceiba.hotelmanager.infraestructura.convertidor.usuario.ConvertidorUsuario;
@@ -20,7 +17,6 @@ import com.ceiba.hotelmanager.testdatabuilder.aplicacion.ComandoReservaTestDataB
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -31,7 +27,6 @@ import org.springframework.web.context.WebApplicationContext;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 

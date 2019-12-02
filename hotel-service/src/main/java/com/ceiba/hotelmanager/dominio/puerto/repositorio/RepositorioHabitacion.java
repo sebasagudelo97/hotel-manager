@@ -1,7 +1,4 @@
 package com.ceiba.hotelmanager.dominio.puerto.repositorio;
-
-
-import com.ceiba.hotelmanager.dominio.modelo.Habitacion;
 import com.ceiba.hotelmanager.dominio.modelo.dto.HabitacionDto;
 
 public interface RepositorioHabitacion {

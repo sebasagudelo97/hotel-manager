@@ -1,6 +1,7 @@
 package com.ceiba.hotelmanager.infraestructura.adaptador.repositorio;
 
         import com.ceiba.hotelmanager.dominio.modelo.Usuario;
+        import com.ceiba.hotelmanager.dominio.modelo.dto.UsuarioDto;
         import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioUsuario;
         import com.ceiba.hotelmanager.infraestructura.convertidor.usuario.ConvertidorUsuario;
         import com.ceiba.hotelmanager.infraestructura.entidad.UsuarioEntidad;
@@ -29,6 +30,11 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
         repositorioUsuarioJpa.save(usuarioEntidad);
     }
 
+    public void guardarDto (UsuarioDto usuarioDto){
+        UsuarioEntidad usuarioEntidad = modelMapper.map(usuarioDto,UsuarioEntidad.class);
+        repositorioUsuarioJpa.save(usuarioEntidad);
+    }
+
     @Override
     public boolean existe(Usuario usuario) {
         Long cedulaIngresada = usuario.getCedulaCiudadania();
@@ -36,15 +42,15 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
     }
 
     @Override
-    public Usuario obtenerIdUsuarioByNumeroCedula(Long numeroCedula) {
+    public UsuarioDto obtenerUsuarioByNumeroCedula(Long numeroCedula) {
         UsuarioEntidad usuarioEntidad = repositorioUsuarioJpa.filtroPorCedulaUsuario(numeroCedula);
-        return modelMapper.map(usuarioEntidad,Usuario.class);
+        return modelMapper.map(usuarioEntidad,UsuarioDto.class);
     }
 
     @Override
-    public List<Usuario> listar() {
+    public List<UsuarioDto> listar() {
         List<UsuarioEntidad> listUsuarioEntidad = repositorioUsuarioJpa.findAll();
-        List<Usuario> listUsuario = new ArrayList<>();
+        List<UsuarioDto> listUsuario = new ArrayList<>();
         return convertidorUsuario.convertirListUsuarioEntidadAListUsuario(listUsuarioEntidad,listUsuario);
     }
 

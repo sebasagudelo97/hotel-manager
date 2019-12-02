@@ -2,6 +2,7 @@ package com.ceiba.hotelmanager.aplicacion.comando.consulta.manejador.reserva;
 
 
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
+import com.ceiba.hotelmanager.dominio.modelo.dto.ReservaDto;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioReserva;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +17,7 @@ public class ManejadorListarReservas {
         this.repositorioReserva = repositorioReserva;
     }
 
-    public List<Reserva> ejecutar(){
+    public List<ReservaDto> ejecutar(){
        return this.repositorioReserva.listar();
     }
 }

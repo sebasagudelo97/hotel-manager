@@ -2,6 +2,7 @@ package com.ceiba.hotelmanager.infraestructura.adaptador.repositorio;
 
 
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
+import com.ceiba.hotelmanager.dominio.modelo.dto.ReservaDto;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioReserva;
 import com.ceiba.hotelmanager.infraestructura.convertidor.factura.ConvertidorFactura;
 import com.ceiba.hotelmanager.infraestructura.convertidor.reserva.ConvertidorListaReserva;
@@ -52,9 +53,9 @@ public class RepositorioReservaImpl implements RepositorioReserva {
         return repositorioReservaJpa.filtroReservaPorNumeroCedula(numeroCedula);
     }
 
-    public List<Reserva> listar() {
+    public List<ReservaDto> listar() {
         List<ReservaEntidad> listReservaEntidad = repositorioReservaJpa.findAll();
-        List<Reserva> listReserva=new ArrayList<>();
+        List<ReservaDto> listReserva=new ArrayList<>();
         return convertidorListaReserva.convertirListReservaEntidadAListReserva(listReservaEntidad,listReserva);
     }
 }

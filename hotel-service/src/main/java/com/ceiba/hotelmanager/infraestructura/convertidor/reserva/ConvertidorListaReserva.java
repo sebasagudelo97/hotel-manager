@@ -1,6 +1,7 @@
 package com.ceiba.hotelmanager.infraestructura.convertidor.reserva;
 
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
+import com.ceiba.hotelmanager.dominio.modelo.dto.ReservaDto;
 import com.ceiba.hotelmanager.infraestructura.entidad.ReservaEntidad;
 import org.modelmapper.ModelMapper;
 
@@ -10,9 +11,9 @@ public class ConvertidorListaReserva {
 
     private ModelMapper modelMapper = new ModelMapper();
 
-    public List<Reserva> convertirListReservaEntidadAListReserva(List<ReservaEntidad> listReservaEntidad, List<Reserva> listReserva){
+    public List<ReservaDto> convertirListReservaEntidadAListReserva(List<ReservaEntidad> listReservaEntidad, List<ReservaDto> listReserva){
         for (ReservaEntidad reservaEntidad: listReservaEntidad){
-            Reserva reserva=modelMapper.map(reservaEntidad, Reserva.class);
+            ReservaDto reserva=modelMapper.map(reservaEntidad, ReservaDto.class);
             listReserva.add(reserva);
         }
         return listReserva;

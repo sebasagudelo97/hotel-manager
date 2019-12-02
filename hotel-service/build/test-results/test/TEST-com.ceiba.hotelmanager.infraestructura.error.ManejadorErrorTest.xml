@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-12-02T15:31:19" hostname="SEBASTIAN-AGUDELO" time="0.031">
+<testsuite name="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-12-02T18:25:50" hostname="SEBASTIAN-AGUDELO" time="0.029">
   <properties/>
-  <testcase name="handleAllExceptionIncorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.026"/>
+  <testcase name="handleAllExceptionIncorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.024"/>
   <testcase name="handleAllExceptionCorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.001"/>
   <testcase name="instanciaCorrecta()" classname="com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest" time="0.002"/>
-  <system-out><![CDATA[2019-12-02 10:31:19.220 ERROR 4432 --- [    Test worker] c.c.h.i.error.ManejadorError             : Exception
+  <system-out><![CDATA[2019-12-02 13:25:50.938 ERROR 968 --- [    Test worker] c.c.h.i.error.ManejadorError             : Exception
 
 java.lang.Exception: null
 	at com.ceiba.hotelmanager.infraestructura.error.ManejadorErrorTest.handleAllExceptionIncorrecta(ManejadorErrorTest.java:23) [test/:na]

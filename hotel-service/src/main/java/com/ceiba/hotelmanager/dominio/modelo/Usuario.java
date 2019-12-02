@@ -19,15 +19,15 @@ public class Usuario {
 
     public Usuario(Long idUsuario, Long cedulaCiudadania, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido,  String numeroCelular) {
 
-        ValidadorArgumento.validarCampoObligatorio(primerNombre,String.format(ESTE_CAMPO_DEBE_SER_OBLIGATORIO," primerNombre"));
-        ValidadorArgumento.validarCampoObligatorio(primerApellido,String.format(ESTE_CAMPO_DEBE_SER_OBLIGATORIO,"primerApellido"));
-        ValidadorArgumento.validarCampoObligatorio(numeroCelular,String.format(ESTE_CAMPO_DEBE_SER_OBLIGATORIO,"numeroCelular"));
-        ValidadorArgumento.validarCampoObligatorio(cedulaCiudadania,String.format(ESTE_CAMPO_DEBE_SER_OBLIGATORIO,"cedulaCiudadania"));
-        ValidadorArgumento.validarLongitudArgumento(String.format(NUMERO_CARACTERES_NO_PERMITIDOS,NUMERO_CARACTERES),primerNombre,NUMERO_CARACTERES);
-        ValidadorArgumento.validarLongitudArgumento(String.format(NUMERO_CARACTERES_NO_PERMITIDOS,NUMERO_CARACTERES),primerApellido,NUMERO_CARACTERES);
-        ValidadorArgumento.validarLongitudArgumento(String.format(NUMERO_CARACTERES_NO_PERMITIDOS,NUMERO_CARACTERES), numeroCelular,NUMERO_CARACTERES);
+        ValidadorArgumento.validarCampoObligatorio(primerNombre, String.format(ESTE_CAMPO_DEBE_SER_OBLIGATORIO, " primerNombre"));
+        ValidadorArgumento.validarCampoObligatorio(primerApellido, String.format(ESTE_CAMPO_DEBE_SER_OBLIGATORIO, "primerApellido"));
+        ValidadorArgumento.validarCampoObligatorio(numeroCelular, String.format(ESTE_CAMPO_DEBE_SER_OBLIGATORIO, "numeroCelular"));
+        ValidadorArgumento.validarCampoObligatorio(cedulaCiudadania, String.format(ESTE_CAMPO_DEBE_SER_OBLIGATORIO, "cedulaCiudadania"));
+        ValidadorArgumento.validarLongitudArgumento(String.format(NUMERO_CARACTERES_NO_PERMITIDOS, NUMERO_CARACTERES), primerNombre, NUMERO_CARACTERES);
+        ValidadorArgumento.validarLongitudArgumento(String.format(NUMERO_CARACTERES_NO_PERMITIDOS, NUMERO_CARACTERES), primerApellido, NUMERO_CARACTERES);
+        ValidadorArgumento.validarLongitudArgumento(String.format(NUMERO_CARACTERES_NO_PERMITIDOS, NUMERO_CARACTERES), numeroCelular, NUMERO_CARACTERES);
 
-        this.idUsuario=idUsuario;
+        this.idUsuario = idUsuario;
         this.cedulaCiudadania = cedulaCiudadania;
         this.primerNombre = primerNombre;
         this.segundoNombre = segundoNombre;
@@ -35,7 +35,6 @@ public class Usuario {
         this.segundoApellido = segundoApellido;
         this.numeroCelular = numeroCelular;
     }
-    public Usuario(){}
     public void setIdUsuario(Long idUsuario){this.idUsuario=idUsuario;}
 
     public void setPrimerNombre(String primerNombre) {

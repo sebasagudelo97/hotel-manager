@@ -81,6 +81,26 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.run">
+    <configuration name="ControladorReservaTest.crearReserva" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorReservaTest.crearReserva&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ControladorReservaTest.eliminarReservaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,26 +161,6 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ControladorUsuarioTest.listarUsuarioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.listarUsuarioTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="hotel-service [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -203,19 +203,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.run" />
-      <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
       <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
       <item itemvalue="Gradle.ControladorReservaTest.listarReservasTest" />
       <item itemvalue="Gradle.ControladorReservaTest.eliminarReservaTest" />
       <item itemvalue="Gradle.hotel-service [test]" />
+      <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
         <item itemvalue="Gradle.hotel-service [test]" />
         <item itemvalue="Gradle.ControladorReservaTest.listarReservasTest" />
         <item itemvalue="Gradle.ControladorReservaTest.eliminarReservaTest" />
         <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
-        <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
       </list>
     </recent_temporary>
   </component>

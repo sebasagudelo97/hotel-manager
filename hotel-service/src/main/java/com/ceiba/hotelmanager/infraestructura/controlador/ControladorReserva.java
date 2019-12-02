@@ -5,6 +5,7 @@ import com.ceiba.hotelmanager.aplicacion.comando.consulta.manejador.reserva.Mane
 import com.ceiba.hotelmanager.aplicacion.comando.manejador.reserva.ManejadorCrearReserva;
 import com.ceiba.hotelmanager.aplicacion.comando.manejador.reserva.ManejadorRegistrarSalidaReserva;
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
+import com.ceiba.hotelmanager.dominio.modelo.dto.ReservaDto;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -35,7 +36,7 @@ public class ControladorReserva {
     }
 
     @GetMapping
-    public List<Reserva> listarReserva(){
+    public List<ReservaDto> listarReserva(){
         return this.manejadorListarReservas.ejecutar();
     }
 }

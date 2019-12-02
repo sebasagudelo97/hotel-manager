@@ -2,6 +2,7 @@ package com.ceiba.hotelmanager.dominio.servicio.reserva;
 
 import com.ceiba.hotelmanager.dominio.excepcion.ExcepcionDuplicidad;
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
+import com.ceiba.hotelmanager.dominio.modelo.dto.UsuarioDto;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioReserva;
 import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioUsuario;
 import com.ceiba.hotelmanager.dominio.servicio.factura.ServicioCrearFactura;
@@ -30,9 +31,11 @@ public class ServicioCrearReserva {
 
     public void ejecutar(Reserva reserva) {
 
+        UsuarioDto usuarioDto = repositorioUsuario.obtenerUsuarioByNumeroCedula(reserva.getNumeroCedula());
+
         validarExistenciaExistenciaReservaPorUsuario(reserva);
         servicioCambiarEstadoHabitacion.verificarDisponibilidadHabitacion(reserva.getNumeroHabitacion());
-        reserva.setUsuario(repositorioUsuario.obtenerIdUsuarioByNumeroCedula(reserva.getNumeroCedula()));
+        reserva.setUsuario(usuarioDto.build());
         reserva.setFactura(ServicioCrearFactura.construirFactura(reserva));
         this.repositorioReserva.guardar(reserva);
         servicioCambiarEstadoHabitacion.cambiarEstadoHabitacion(reserva.getNumeroHabitacion());
