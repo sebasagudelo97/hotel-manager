@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDescuentoHabitacionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-03T15:58:03" hostname="SEBASTIAN-AGUDELO" time="0.158">
+<testsuite name="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDescuentoHabitacionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-03T19:37:33" hostname="SEBASTIAN-AGUDELO" time="0.215">
   <properties/>
-  <testcase name="calcularValorDeHabitacionSinDescuentoTest()" classname="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDescuentoHabitacionTest" time="0.147"/>
-  <testcase name="calcularValorDeHabitacionConDescuentoTest()" classname="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDescuentoHabitacionTest" time="0.003"/>
+  <testcase name="calcularValorDeHabitacionSinDescuentoTest()" classname="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDescuentoHabitacionTest" time="0.212"/>
+  <testcase name="calcularValorDeHabitacionConDescuentoTest()" classname="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDescuentoHabitacionTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

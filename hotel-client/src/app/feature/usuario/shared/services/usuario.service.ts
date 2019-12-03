@@ -1,31 +1,28 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Usuario } from '../model/usuario';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
+import { BaseService } from 'src/app/core/services/base.service';
 
 @Injectable()
-export class UsuarioService {
-
-  // hacer uso del environment
-   
+export class UsuarioService extends BaseService {   
   
-  constructor(private http: HttpClient) { }
+  constructor(protected http: HttpClient) {
+    super(http);
+   }
 
-  create(usuario: Usuario): Observable<Usuario> {
-    return this.http.post<Usuario>(`${environment.endpoint}/usuario`, usuario)    
+  public create(usuario: Usuario) {
+    return this.doPost<Usuario, boolean>(`${environment.endpoint}/usuario`, usuario)    
   }
 
-  listUsuarios(): Observable<Usuario[]> {
-    return this.http.get(`${environment.endpoint}/usuario`).pipe(
-      map(response => response as Usuario[])
-    );
+  public listUsuarios(){
+    return this.doGet<Usuario[]>(`${environment.endpoint}/usuario`)
   } 
 
-  eliminar(cedulaCiudadania: number):Observable<Usuario>{
-    return this.http.delete<Usuario>(`${environment.endpoint}/usuario/${cedulaCiudadania}`)
+  public eliminar(cedulaCiudadania: number){
+    return this.doDelete<Usuario>(`${environment.endpoint}/usuario/${cedulaCiudadania}`)
   }
 }
  

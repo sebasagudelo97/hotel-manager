@@ -1,26 +1,25 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Reserva } from '../model/reserva';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
+import { BaseService } from 'src/app/core/services/base.service';
 
 @Injectable()
-export class ReservaService {
+export class ReservaService extends BaseService {
 
-  constructor(private http: HttpClient) {}
+  constructor(protected http: HttpClient) {
+    super(http);
+  }
 
-  create(reserva: Reserva): Observable<Reserva>{
-    return this.http.post<Reserva>(`${environment.endpoint}/reserva`, reserva)
+  public create(reserva: Reserva){
+    return this.doPost<Reserva, boolean>(`${environment.endpoint}/reserva`, reserva)
   }  
   
-  listReservas(): Observable<Reserva[]> {
-    return this.http.get(`${environment.endpoint}/reserva`).pipe(
-      map(response => response as Reserva[])
-    );
+  public listReservas() {
+    return this.doGet<Reserva[]>(`${environment.endpoint}/reserva`)
   }  
 
-  eliminar(numeroCedula: number):Observable<Reserva>{
-    return this.http.delete<Reserva>(`${environment.endpoint}/reserva/${numeroCedula}`)
+  public eliminar(numeroCedula: number){
+    return this.doDelete<Reserva>(`${environment.endpoint}/reserva/${numeroCedula}`)
   }
 }
