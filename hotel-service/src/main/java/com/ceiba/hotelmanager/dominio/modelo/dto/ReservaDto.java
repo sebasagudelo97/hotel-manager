@@ -13,9 +13,7 @@ public class ReservaDto {
     private LocalDate fechaSalida;
     private FacturaDto facturaDto;
 
-    public ReservaDto(){
-
-    }
+    public ReservaDto(){ }
 
     public int getIdReserva() {
         return idReserva;

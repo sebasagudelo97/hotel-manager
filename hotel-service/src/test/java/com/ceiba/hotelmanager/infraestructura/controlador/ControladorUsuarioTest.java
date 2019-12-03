@@ -3,7 +3,7 @@ package com.ceiba.hotelmanager.infraestructura.controlador;
 import com.ceiba.hotelmanager.HotelmanagerApplication;
 import com.ceiba.hotelmanager.aplicacion.comando.ComandoUsuario;
 import com.ceiba.hotelmanager.dominio.modelo.Usuario;
-import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioUsuarioImpl;
+import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioUsuarioImplPostgreSql;
 import com.ceiba.hotelmanager.infraestructura.repositoriojpa.RepositorioUsuarioJpa;
 import com.ceiba.hotelmanager.testdatabuilder.aplicacion.ComandoUsuarioTestDataBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -64,7 +64,7 @@ public class ControladorUsuarioTest {
 
     @Test
     public void listarUsuarioTest() throws Exception{
-        RepositorioUsuarioImpl repositorioUsuario = new RepositorioUsuarioImpl(repositorioUsuarioJpa);
+        RepositorioUsuarioImplPostgreSql repositorioUsuario = new RepositorioUsuarioImplPostgreSql(repositorioUsuarioJpa);
 
         Usuario primerUsuario = new Usuario(1L,1036960221L,"Juan", "Sebastian", "Agudelo", "Mejia", "3144568565");
         repositorioUsuario.guardar(primerUsuario);
@@ -88,7 +88,7 @@ public class ControladorUsuarioTest {
 
     @Test
     public void eliminarUsuarioTest() throws Exception{
-        RepositorioUsuarioImpl repositorioUsuario = new RepositorioUsuarioImpl(repositorioUsuarioJpa);
+        RepositorioUsuarioImplPostgreSql repositorioUsuario = new RepositorioUsuarioImplPostgreSql(repositorioUsuarioJpa);
 
         Usuario primerUsuario = new Usuario(1L,1036960221L,"Juan", "Sebastian", "Agudelo", "Mejia", "3144568565");
         repositorioUsuario.guardar(primerUsuario);

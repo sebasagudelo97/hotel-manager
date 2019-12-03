@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 public class ConvertidorFactura {
 
     private ModelMapper modelMapper = new ModelMapper();
+
     public FacturaEntidad convertirFacturaDominioAEntidad(Factura factura){
         return modelMapper.map(factura,FacturaEntidad.class);
-
     }
 }

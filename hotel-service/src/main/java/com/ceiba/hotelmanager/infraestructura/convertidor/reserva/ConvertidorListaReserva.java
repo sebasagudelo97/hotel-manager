@@ -1,6 +1,5 @@
 package com.ceiba.hotelmanager.infraestructura.convertidor.reserva;
 
-import com.ceiba.hotelmanager.dominio.modelo.Reserva;
 import com.ceiba.hotelmanager.dominio.modelo.dto.ReservaDto;
 import com.ceiba.hotelmanager.infraestructura.entidad.ReservaEntidad;
 import org.modelmapper.ModelMapper;

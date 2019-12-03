@@ -7,6 +7,7 @@ import com.ceiba.hotelmanager.dominio.puerto.repositorio.RepositorioUsuario;
 public class ServicioCrearUsuario {
 
     private static final String EL_USUARIO_YA_EXISTE_EN_EL_SISTEMA="El usuario ya se encuentra registrado en el sistema";
+
     private RepositorioUsuario repositorioUsuario;
 
     public ServicioCrearUsuario(RepositorioUsuario repositorioUsuario){

@@ -1,10 +1,9 @@
 package com.ceiba.hotelmanager.dominio.servicio;
 
-import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioHabitacionImpl;
+import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioHabitacionPostgreSql;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import org.omg.CORBA.Any;
 
 import java.time.LocalDate;
 
@@ -17,7 +16,7 @@ public class ServicioCalcularDescuentoHabitacionTest {
 
     @Test
     void calcularValorDeHabitacionConDescuentoTest(){
-        RepositorioHabitacionImpl repositorioHabitacion = Mockito.mock(RepositorioHabitacionImpl.class);
+        RepositorioHabitacionPostgreSql repositorioHabitacion = Mockito.mock(RepositorioHabitacionPostgreSql.class);
         ServicioCalcularDescuentoHabitacion servicioCalcularDescuentoHabitacion=new ServicioCalcularDescuentoHabitacion(repositorioHabitacion);
         Mockito.when(repositorioHabitacion.valorHabitacion(NUMERO_HABITACION)).thenReturn(40000L);
 
@@ -29,7 +28,7 @@ public class ServicioCalcularDescuentoHabitacionTest {
 
     @Test
     void calcularValorDeHabitacionSinDescuentoTest(){
-        RepositorioHabitacionImpl repositorioHabitacion = Mockito.mock(RepositorioHabitacionImpl.class);
+        RepositorioHabitacionPostgreSql repositorioHabitacion = Mockito.mock(RepositorioHabitacionPostgreSql.class);
         ServicioCalcularDescuentoHabitacion servicioCalcularDescuentoHabitacion=new ServicioCalcularDescuentoHabitacion(repositorioHabitacion);
         Mockito.when(repositorioHabitacion.valorHabitacion(NUMERO_HABITACION)).thenReturn(40000L);
 

@@ -6,8 +6,8 @@ import com.ceiba.hotelmanager.dominio.modelo.Factura;
 import com.ceiba.hotelmanager.dominio.modelo.Reserva;
 import com.ceiba.hotelmanager.dominio.modelo.Usuario;
 import com.ceiba.hotelmanager.dominio.modelo.dto.HabitacionDto;
-import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioHabitacionImpl;
-import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioUsuarioImpl;
+import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioHabitacionPostgreSql;
+import com.ceiba.hotelmanager.infraestructura.adaptador.repositorio.RepositorioUsuarioImplPostgreSql;
 import com.ceiba.hotelmanager.infraestructura.convertidor.factura.ConvertidorFactura;
 import com.ceiba.hotelmanager.infraestructura.convertidor.usuario.ConvertidorUsuario;
 import com.ceiba.hotelmanager.infraestructura.repositoriojpa.RepositorioHabitacionJpa;
@@ -71,11 +71,11 @@ public class ControladorReservaTest {
     public void crearReserva() throws Exception{
         ComandoReserva comandoReserva= new ComandoReservaTestDataBuilder().build();
         HabitacionDto hab = new HabitacionDto("201", true, 40000L);
-        RepositorioHabitacionImpl repositorioHabitacion = new RepositorioHabitacionImpl(repositorioHabitacionJpa);
+        RepositorioHabitacionPostgreSql repositorioHabitacion = new RepositorioHabitacionPostgreSql(repositorioHabitacionJpa);
         repositorioHabitacion.guardar(hab);
 
         Usuario usuario = new Usuario(1L,1036960221L,"Juan", "Sebastian", "Agudelo", "Mejia", "3144568565");
-        RepositorioUsuarioImpl repositorioUsuario = new RepositorioUsuarioImpl(repositorioUsuarioJpa);
+        RepositorioUsuarioImplPostgreSql repositorioUsuario = new RepositorioUsuarioImplPostgreSql(repositorioUsuarioJpa);
         repositorioUsuario.guardar(usuario);
 
 
@@ -89,8 +89,8 @@ public class ControladorReservaTest {
 
     @Test
     public void listarReservasTest() throws Exception{
-        RepositorioHabitacionImpl repositorioHabitacion = new RepositorioHabitacionImpl(repositorioHabitacionJpa);
-        RepositorioUsuarioImpl repositorioUsuario = new RepositorioUsuarioImpl(repositorioUsuarioJpa);
+        RepositorioHabitacionPostgreSql repositorioHabitacion = new RepositorioHabitacionPostgreSql(repositorioHabitacionJpa);
+        RepositorioUsuarioImplPostgreSql repositorioUsuario = new RepositorioUsuarioImplPostgreSql(repositorioUsuarioJpa);
 
         HabitacionDto primeraHabitacion = new HabitacionDto("201", true, 40000L);
         repositorioHabitacion.guardar(primeraHabitacion);

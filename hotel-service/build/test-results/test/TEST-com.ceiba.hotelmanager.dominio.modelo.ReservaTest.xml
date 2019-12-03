@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.dominio.modelo.ReservaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T18:47:59" hostname="SEBASTIAN-AGUDELO" time="0.002">
+<testsuite name="com.ceiba.hotelmanager.dominio.modelo.ReservaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-03T15:58:03" hostname="SEBASTIAN-AGUDELO" time="0.019">
   <properties/>
-  <testcase name="creacionReservaTest()" classname="com.ceiba.hotelmanager.dominio.modelo.ReservaTest" time="0.002"/>
+  <testcase name="creacionReservaTest()" classname="com.ceiba.hotelmanager.dominio.modelo.ReservaTest" time="0.019"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

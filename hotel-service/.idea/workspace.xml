@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="" />
+    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../hotel-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/shared/services/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/shared/services/usuario.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-client/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/environments/environment.ts" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,11 +257,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/aplicacion/comando/manejador/reserva/ManejadorRegistrarSalidaReserva.java</url>
           <line>15</line>
           <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/aplicacion/comando/manejador/reserva/ManejadorCrearReserva.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
