@@ -22,6 +22,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import javax.transaction.Transactional;
@@ -82,7 +83,25 @@ public class ControladorUsuarioTest {
 
         mockMvc.perform(get("http://localhost:8080/usuario")
         .contentType(MediaType.APPLICATION_JSON)
-        .content(objectMapper.writeValueAsString(usuarios))).andDo(print()).andExpect(status().isOk());
+        .content(objectMapper.writeValueAsString(usuarios))).andDo(print()).andExpect(status().isOk())
+        .andExpect(jsonPath("[0].cedulaCiudadania").value(1036960221L))
+        .andExpect(jsonPath("[0].primerNombre").value("Juan"))
+        .andExpect(jsonPath("[0].segundoNombre").value("Sebastian"))
+        .andExpect(jsonPath("[0].primerApellido").value("Agudelo"))
+        .andExpect(jsonPath("[0].segundoApellido").value("Mejia"))
+        .andExpect(jsonPath("[0].numeroCelular").value("3144568565"))
+                .andExpect(jsonPath("[1].cedulaCiudadania").value(1036960333L))
+                .andExpect(jsonPath("[1].primerNombre").value("Juanes"))
+                .andExpect(jsonPath("[1].segundoNombre").value("Sebastian"))
+                .andExpect(jsonPath("[1].primerApellido").value("Perez"))
+                .andExpect(jsonPath("[1].segundoApellido").value("Mejia"))
+                .andExpect(jsonPath("[1].numeroCelular").value("3144568566"))
+                        .andExpect(jsonPath("[2].cedulaCiudadania").value(1046960333L))
+                        .andExpect(jsonPath("[2].primerNombre").value("Maria"))
+                        .andExpect(jsonPath("[2].segundoNombre").value("Alejandra"))
+                        .andExpect(jsonPath("[2].primerApellido").value("Agudelo"))
+                        .andExpect(jsonPath("[2].segundoApellido").value("Mejia"))
+                        .andExpect(jsonPath("[2].numeroCelular").value("3144568536"));
 
     }
 

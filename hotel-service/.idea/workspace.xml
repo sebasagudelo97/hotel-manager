@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/shared/services/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/usuario/shared/services/usuario.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,33 +80,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.run">
+  <component name="RunManager" selected="Gradle.ControladorUsuarioTest.listarUsuarioTest">
     <configuration name="ControladorReservaTest.crearReserva" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorReservaTest.crearReserva&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ControladorReservaTest.eliminarReservaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorReservaTest.eliminarReservaTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -149,6 +127,26 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.eliminarUsuarioTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ControladorUsuarioTest.listarUsuarioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.listarUsuarioTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -207,17 +205,17 @@
       <item itemvalue="Gradle.run" />
       <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
       <item itemvalue="Gradle.ControladorReservaTest.listarReservasTest" />
-      <item itemvalue="Gradle.ControladorReservaTest.eliminarReservaTest" />
       <item itemvalue="Gradle.hotel-service [test]" />
       <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
+      <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
+        <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
         <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
         <item itemvalue="Gradle.hotel-service [test]" />
         <item itemvalue="Gradle.ControladorReservaTest.listarReservasTest" />
-        <item itemvalue="Gradle.ControladorReservaTest.eliminarReservaTest" />
-        <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
       </list>
     </recent_temporary>
   </component>
