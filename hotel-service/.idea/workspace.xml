@@ -80,13 +80,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ControladorUsuarioTest.listarUsuarioTest">
-    <configuration name="ControladorReservaTest.crearReserva" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'com.ceiba.hotelmanager'">
+    <configuration name="ControladorReservaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorReservaTest.crearReserva&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorReservaTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -101,12 +101,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ControladorReservaTest.listarReservasTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ControladorUsuarioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorReservaTest.listarReservasTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -121,12 +121,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ControladorUsuarioTest.eliminarUsuarioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ControladorUsuarioTest.crearUsuario" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.eliminarUsuarioTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.infraestructura.controlador.ControladorUsuarioTest.crearUsuario&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -161,23 +161,24 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="hotel-service [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'com.ceiba.hotelmanager'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;com.ceiba.hotelmanager.*&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":cleanTest" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="run" type="GradleRunConfiguration" factoryName="Gradle">
@@ -203,19 +204,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.run" />
-      <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
-      <item itemvalue="Gradle.ControladorReservaTest.listarReservasTest" />
-      <item itemvalue="Gradle.hotel-service [test]" />
-      <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
       <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
+      <item itemvalue="Gradle.Tests in 'com.ceiba.hotelmanager'" />
+      <item itemvalue="Gradle.ControladorUsuarioTest.crearUsuario" />
+      <item itemvalue="Gradle.ControladorUsuarioTest" />
+      <item itemvalue="Gradle.ControladorReservaTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'com.ceiba.hotelmanager'" />
+        <item itemvalue="Gradle.ControladorReservaTest" />
+        <item itemvalue="Gradle.ControladorUsuarioTest" />
         <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
-        <item itemvalue="Gradle.ControladorUsuarioTest.eliminarUsuarioTest" />
-        <item itemvalue="Gradle.ControladorReservaTest.crearReserva" />
-        <item itemvalue="Gradle.hotel-service [test]" />
-        <item itemvalue="Gradle.ControladorReservaTest.listarReservasTest" />
+        <item itemvalue="Gradle.ControladorUsuarioTest.crearUsuario" />
       </list>
     </recent_temporary>
   </component>
@@ -252,6 +253,46 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/aplicacion/comando/manejador/reserva/ManejadorRegistrarSalidaReserva.java</url>
           <line>15</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/infraestructura/controlador/ControladorUsuario.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/aplicacion/comando/manejador/usuario/ManejadorCrearUsuario.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/aplicacion/comando/manejador/usuario/ManejadorCrearUsuario.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/dominio/servicio/usuario/ServicioCrearUsuario.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/dominio/servicio/usuario/ServicioCrearUsuario.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/infraestructura/adaptador/repositorio/RepositorioUsuarioImplPostgreSql.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/infraestructura/adaptador/repositorio/RepositorioUsuarioImplPostgreSql.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ceiba/hotelmanager/infraestructura/controlador/ControladorUsuarioTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
