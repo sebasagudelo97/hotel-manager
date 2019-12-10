@@ -270,16 +270,6 @@
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/dominio/servicio/usuario/ServicioCrearUsuario.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/dominio/servicio/usuario/ServicioCrearUsuario.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/infraestructura/adaptador/repositorio/RepositorioUsuarioImplPostgreSql.java</url>
           <line>28</line>
           <option name="timeStamp" value="56" />
@@ -291,7 +281,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ceiba/hotelmanager/infraestructura/controlador/ControladorUsuarioTest.java</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>

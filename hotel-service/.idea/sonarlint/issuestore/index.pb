@@ -131,8 +131,6 @@ Zsrc/main/java/com/ceiba/hotelmanager/dominio/servicio/usuario/ServicioEliminarU
 psrc/main/java/com/ceiba/hotelmanager/aplicacion/comando/consulta/manejador/usuario/ManejadorEliminarUsuario.java,4\6\466f4c3dc1086064dedf6ed5de53b1ee442783b7
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-‚
-Rsrc/test/java/com/ceiba/hotelmanager/infraestructura/error/ManejadorErrorTest.java,0\b\0b32153a5588fd5a00b025f2ca910410acd6a84c
 ’
 bsrc/test/java/com/ceiba/hotelmanager/testdatabuilder/dominio/modelo/HabitacionTestDataBuilder.java,3\9\396121781e273e6bbb4a1435d436dd043ee4d13c
 Ÿ
