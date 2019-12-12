@@ -179,3 +179,5 @@ w
 Gsrc/main/java/com/ceiba/hotelmanager/dominio/modelo/dto/ReservaDto.java,7\4\746185f1417ac523475673face6c1bf4399cb2c8
 œ
 lsrc/main/java/com/ceiba/hotelmanager/infraestructura/adaptador/repositorio/RepositorioReservaPostgreSql.java,1\7\1704fc22eacaf328b10096e80088e167211005ba
+t
+Dsrc/test/java/com/ceiba/hotelmanager/dominio/modelo/FacturaTest.java,7\b\7bc59ec6381a1799eab7484ec6864d2d22eb45ce

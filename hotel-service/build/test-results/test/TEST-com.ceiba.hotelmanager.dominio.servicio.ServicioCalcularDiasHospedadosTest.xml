@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDiasHospedadosTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-10T15:07:13" hostname="SEBASTIAN-AGUDELO" time="0.003">
+<testsuite name="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDiasHospedadosTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-11T17:08:11" hostname="SEBASTIAN-AGUDELO" time="0.002">
   <properties/>
-  <testcase name="obtenerFechaActualTest()" classname="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDiasHospedadosTest" time="0.001"/>
+  <testcase name="obtenerFechaActualTest()" classname="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDiasHospedadosTest" time="0.0"/>
   <testcase name="calcularCorrectoDiasHospedadosTest()" classname="com.ceiba.hotelmanager.dominio.servicio.ServicioCalcularDiasHospedadosTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

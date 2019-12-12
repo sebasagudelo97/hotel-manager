@@ -16,12 +16,12 @@ export class BaseService {
   }
 
   protected doGet<T>(serviceUrl: string) {
-
+    
     return this.http.get(serviceUrl).pipe(
-        map(response => response as T)
-    );
+      map(response => response as T)
+      );
   }
-
+    
   protected doDelete<T>(serviceUrl: string ){
 
       return this.http.delete(serviceUrl).pipe(

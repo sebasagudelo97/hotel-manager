@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="" />
+    <list default="true" id="761fdacb-5782-4bd3-b02d-e215b0991d44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/core/services/base.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/core/services/base.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'com.ceiba.hotelmanager'">
+  <component name="RunManager" selected="Gradle.run">
     <configuration name="ControladorReservaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -253,11 +257,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/aplicacion/comando/manejador/reserva/ManejadorRegistrarSalidaReserva.java</url>
           <line>15</line>
           <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/infraestructura/controlador/ControladorUsuario.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ceiba/hotelmanager/aplicacion/comando/manejador/usuario/ManejadorCrearUsuario.java</url>

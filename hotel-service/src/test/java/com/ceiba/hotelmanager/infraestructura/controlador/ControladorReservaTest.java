@@ -34,8 +34,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-
-
 @SpringBootTest(classes = HotelmanagerApplication.class)
 @AutoConfigureMockMvc
 @Transactional
