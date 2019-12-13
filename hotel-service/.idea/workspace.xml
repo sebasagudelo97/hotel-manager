@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/app/feature/principal/principal.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hotel-client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-client/src/index.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,23 +65,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunManager" selected="Gradle.run">
     <configuration name="ControladorReservaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -185,6 +178,23 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Unnamed" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -208,6 +218,7 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.run" />
+      <item itemvalue="Gradle.Unnamed" />
       <item itemvalue="Gradle.ControladorUsuarioTest.listarUsuarioTest" />
       <item itemvalue="Gradle.Tests in 'com.ceiba.hotelmanager'" />
       <item itemvalue="Gradle.ControladorUsuarioTest.crearUsuario" />
@@ -223,6 +234,18 @@
         <item itemvalue="Gradle.ControladorUsuarioTest.crearUsuario" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -249,6 +272,57 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1620" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576166048604">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="1620" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576166048604" />
+    <state x="2014" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576166011328">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="2014" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576166011328" />
+    <state x="1746" y="84" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1576166005701">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="1746" y="84" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576166005701" />
+    <state x="1946" y="184" key="FileChooserDialogImpl" timestamp="1576166297988">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="1946" y="184" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576166297988" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1576248747758">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576248747758" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1576248747758">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576248747758" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1576248747757">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576248747757" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1576248747758">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576248747758" />
+    <state x="1667" y="72" key="SettingsEditor" timestamp="1576166312985">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="1667" y="72" key="SettingsEditor/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576166312985" />
+    <state x="1810" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1576248506384">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1600.860@0.0.1366.728" timestamp="1576164777930" />
+    <state x="1810" y="221" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576248506384" />
+    <state x="1975" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576166155697">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="1975" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576166155697" />
+    <state x="1822" y="195" key="run.anything.popup" timestamp="1576166073952">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="1822" y="195" key="run.anything.popup/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1576166073952" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
